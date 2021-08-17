@@ -1,2 +1,2 @@
-# 151-multimedia-integrieren
-Website for Module 151 "Multimedia-Inhalte im Webauftritt integrieren"
+# 152-multimedia-integrieren
+Website for Module 152 "Multimedia-Inhalte im Webauftritt integrieren"
