@@ -4,7 +4,7 @@
   "description": "Website for Module 152 \"Multimedia-Inhalte im Webauftritt integrieren\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tailwindcss build src/styles.css -o public/styles.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mahogany-dev/152-multimedia-integrieren/issues"
   },
-  "homepage": "https://github.com/mahogany-dev/152-multimedia-integrieren#readme"
+  "homepage": "https://github.com/mahogany-dev/152-multimedia-integrieren#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  }
 }
