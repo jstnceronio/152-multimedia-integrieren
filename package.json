@@ -1,0 +1,20 @@
+{
+  "name": "152-multimedia-integrieren",
+  "version": "1.0.0",
+  "description": "Website for Module 152 \"Multimedia-Inhalte im Webauftritt integrieren\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahogany-dev/152-multimedia-integrieren.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahogany-dev/152-multimedia-integrieren/issues"
+  },
+  "homepage": "https://github.com/mahogany-dev/152-multimedia-integrieren#readme"
+}
