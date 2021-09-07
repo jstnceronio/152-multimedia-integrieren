@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="public/styles.css" rel="stylesheet">
-  <title>M151 Webauftritt</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tailwind Starter Template - App Landing Page Template: Tailwind Toolbox</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">	
+	
+	<link rel="stylesheet" href="public/styles.css">
+	<link rel="stylesheet" href="public/custom.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
 </head>
-<body>
-    <nav class="flex items-center justify-between flex-wrap p-6">
-        <div class="flex items-center flex-no-shrink text-black mr-6">
-          <span class="font-semibold text-xl tracking-tight">M151 Webauftritt</span>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow">
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue mr-4">
-                Startseite
-            </a>
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue mr-4">
-                Justin
-            </a>
-            <a href="" class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue mr-4">
-                Timo
-                nice
-            </a>
-            <a href="" class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue mr-4">
-                Lukas
-            </a>
-            <a href="" class="block mt-4 lg:inline-block lg:mt-0 hover:text-blue mr-4">
-                Aline
-            </a>
-          </div>
-        </div>
-      </nav>
+
+
+<body class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
+
+<div class="h-screen pb-14 bg-right bg-cover" style="background-image:url('images/hand.png');">
+	<!--Nav-->
+	<div class="w-full container mx-auto p-6">
+			
+		<div class="w-full flex items-center justify-between">
+			<a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
+				 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 text-indigo-600 pr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+				  </svg>152
+			</a>
+			
+			<div class="flex w-1/2 justify-end content-center">		
+				<a class="inline-block text-purple-800 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+					  </svg>
+				</a>
+				<a class="inline-block text-purple-800 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+					  </svg>
+				</a>
+			</div>
+			
+		</div>
+
+	</div>
+
+	<!--Main-->
+	<div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+		
+		<!--Left Col-->
+		<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+			<h1 class="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">Modul 152 Webseite</h1>
+			<p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">By Aline, Lukas, Justin and Timo</p>
+
+		</div>
+		
+		<!--Right Col-->
+		<div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
+			<img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="images/points.svg">
+		</div>
+		
+		<!--Footer-->
+		<div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+		</div>
+		
+	</div>
+	
+
+</div>
 </body>
 </html>
