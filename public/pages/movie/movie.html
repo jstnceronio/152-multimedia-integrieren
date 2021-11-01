@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
- <link rel="stylesheet" href="../../../public/styles.css">
-<link rel="stylesheet" href="../../../public/custom.css">
 
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+<head>
+  <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../public/styles.css">
+  <link rel="stylesheet" href="../../../public/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <title>Video Player</title>
 </head>
 
-<body>
-  <!--Nav-->
-  <div class="h-screen pb-14 bg-right bg-white">
+<body class="leading-normal tracking-normal text-gray-900">
+  <!-- Navigation Bar -->
+  <div class="h-screen">
     <div class="w-full container mx-auto p-6">
       <div class="w-full flex items-center justify-between">
-        <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 text-indigo-600 pr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-            </svg>152
+        <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+          href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 text-indigo-600 pr-2" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>152
         </a>
-        <div class="flex w-1/2 justify-end content-center">   
-          <a class="inline-block text-purple-800 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " href="../../../index.html">
+        <div class="flex w-1/2 justify-end content-center">
+          <a class="inline-block text-purple-800 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 "
+            href="../../../index.html">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-          </svg>
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
           </a>
         </div>
       </div>
     </div>
-    
-    <div class="w-full h-screen">
-      <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-        <h1 class="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left">Videoprojekt</h1>
-      </div>
-      <div class="w-full justify-center items-center">
-        <video
-          id="my-video" 
-          class="video-js vjs-big-play-centered"
-          controls
-          preload="auto"
-          width="900"
-          height="550"
-          data-setup='{}'
-        >
-         <source src="videos/demo.mp4" type="video/mp4" />
-         <source src="videos/demo.webm" type="video/webm" />
-           <p class="vjs-no-js">
-            To view this video please enable JavaScript, and consider upgrading to a
-            web browser that
-            <a href="https://videojs.com/html5-video-support/" target="_blank"
-              >supports HTML5 video</a
-            >
-          </p> 
-        </video>
+
+    <!-- Page Content -->
+    <div class="w-4/5 h-screen mx-auto items-center">
+      <h1 class="text-7xl text-black font-bold text-center uppercase mb-6 tracking-tight title">
+        B
+        <span class="text-red-500">
+          •
+        </span>
+        I
+        <span class="text-blue-500">
+          •
+        </span>
+        T
+        <span class="text-yellow-500">
+          •
+        </span>
+        C
+        <span class="text-red-500">
+          •
+        </span>
+        O
+        <span class="text-blue-500">
+          •
+        </span>
+        M
+      </h1>
+      <video id="my-video" class="video-js vjs-big-play-centered mx-auto" controls preload="auto" width="900" height="540"
+        data-setup='{}'>
+        <source src="videos/bitcom.mp4" type="video/mp4" />
+        <!-- No JS warning -->
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+      </video>
+        
+      <!-- Credits -->
+      <div class="text-center text-lg mt-4 title">
+        Aline Ammann als <span class="text-red-500">Jessica</span>, Lukas Freckmann als <span class="text-green-500">Kevin</span>, Timo Maibach als <span class="text-yellow-500">Jordan</span> und Justin Ceronio als <span class="text-blue-500">Ben</span>
       </div>
     </div>
   </div>
   <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
 </body>
+
 </html>

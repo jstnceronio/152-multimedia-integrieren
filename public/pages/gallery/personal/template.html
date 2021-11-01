@@ -11,17 +11,64 @@
 	
 	<link rel="stylesheet" href="./../../../styles.css">
 	<link rel="stylesheet" href="./../../../custom.css">
+    <link rel="stylesheet" href="./../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <style>
+        .darken {
+            -webkit-filter: brightness(100%);
+            -moz-filter: brightness(100%);
+            -o-filter: brightness(100%);
+            -ms-filter: brightness(100%);
+            filter: brightness(100%);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .darken:hover{
+            -webkit-filter: brightness(70%);
+            -moz-filter: brightness(70%);
+            -o-filter: brightness(70%);
+            -ms-filter: brightness(70%);
+            filter: brightness(70%);
+        }
+
+        .image-container .image-info-icon {
+            opacity: 0%;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            -webkit-filter: brightness(100%);
+            -moz-filter: brightness(100%);
+            -o-filter: brightness(100%);
+            -ms-filter: brightness(100%);
+            filter: brightness(100%);
+        }
+
+        .image-container:hover .image-info-icon {
+            opacity: 100%;
+            -webkit-filter: brightness(130%) !important;
+            -moz-filter: brightness(130%) !important;
+            -o-filter: brightness(130%) !important;
+            -ms-filter: brightness(130%) !important;
+            filter: brightness(130%) !important;
+        }
+    </style>
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 </head>
 
 <body class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
-    <div class="h-screen pb-14 bg-right bg-cover" style="background-image:url('images/hand.png');">
+    <div class="h-screen pb-14">
         <!-- Navigation -->
         <div class="w-full container mx-auto p-6"> 
             <div class="w-full flex items-center justify-between">
                 <!-- Book and 152 Text (top left) -->
-                <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
+                <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="./../../../../index.html"> 
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 text-indigo-600 pr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>152
@@ -30,7 +77,7 @@
                 <!-- Navigation Menu -->
                 <div class="flex w-1/2 justify-end content-center">
                     <!-- Go to Gallery (Camera icon) -->
-                    <a class="inline-block text-purple-800 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="#">
+                    <a class="inline-block text-purple-800 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="./../selector.html">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -38,7 +85,7 @@
                     </a>
 
                     <!-- Go to Movie (Film icon)-->
-                    <a class="inline-block text-purple-800 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " href="#">
+                    <a class="inline-block text-purple-800 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " href="./../../movie/movie.html">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
                         </svg>
@@ -48,21 +95,29 @@
         </div>
 
         <!-- Main -->
-        <div class="container mx-auto px-4">
-            <div class="flex space-x-4 justify-center">
-                <div class="flex-1">
-                    1
-                </div>
-                <div class="flex-2">
-                    2
-                </div>
-                <div class="flex-3">
-                    3
+        <h1 class="text-6xl font-semibold text-indigo-400 text-center p-4">Joe's Gallerie</h1>
+        <div style="max-width: 90%; box-sizing: border-box;" class="flex flex-row flex-wrap justify-center mx-auto">
+            <div class="relative image-container">
+                <div class="darken">
+                    <img class="m-4 w-auto md:h-96 sm:h-60 h-36 shadow" src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt="Image 1">
+                    <div class="image-info-icon absolute bottom-6 right-6">
+                        <span style="color: white;">
+                            <i class="fas fa-info-circle sm:fa-1x fa-2x"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
+            
+            <!--<div class="relative darken image-container">
+                <img class="m-4 w-auto md:h-96 sm:h-60 h-36 shadow" src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt="Image 2">
+                <div class="image-info-icon absolute bottom-6 right-6">
+                    <p class="text-white">asdasdasdasd</p>
+                    <span class="" style="color: white;">
+                        <i class="fas fa-info-circle sm:fa-1x fa-2x"></i>
+                    </span>
+                </div>
+            </div>-->
         </div>
     </div>
-    
 </body>
-
 </html>

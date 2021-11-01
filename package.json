@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mahogany-dev/152-multimedia-integrieren#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
