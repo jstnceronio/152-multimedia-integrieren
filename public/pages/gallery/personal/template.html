@@ -35,27 +35,13 @@
             filter: brightness(70%);
         }
 
-        .image-container .image-info-icon {
-            opacity: 0%;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
+        .image-container .image-text {
+            color: rgba(255, 255, 255, 0);
             transition: all 0.3s ease-in-out;
-            -webkit-filter: brightness(100%);
-            -moz-filter: brightness(100%);
-            -o-filter: brightness(100%);
-            -ms-filter: brightness(100%);
-            filter: brightness(100%);
         }
 
-        .image-container:hover .image-info-icon {
-            opacity: 100%;
-            -webkit-filter: brightness(130%) !important;
-            -moz-filter: brightness(130%) !important;
-            -o-filter: brightness(130%) !important;
-            -ms-filter: brightness(130%) !important;
-            filter: brightness(130%) !important;
+        .image-container:hover .image-text {
+            color: rgba(255, 255, 255, 1)
         }
     </style>
 
@@ -100,23 +86,15 @@
             <div class="relative image-container">
                 <div class="darken">
                     <img class="m-4 w-auto md:h-96 sm:h-60 h-36 shadow" src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt="Image 1">
-                    <div class="image-info-icon absolute bottom-6 right-6">
-                        <span style="color: white;">
-                            <i class="fas fa-info-circle sm:fa-1x fa-2x"></i>
-                        </span>
-                    </div>
                 </div>
+                <p class="image-text absolute top-6 left-8 text-white font-bold text-xl">Info: asdasd</p>
             </div>
-            
-            <!--<div class="relative darken image-container">
-                <img class="m-4 w-auto md:h-96 sm:h-60 h-36 shadow" src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt="Image 2">
-                <div class="image-info-icon absolute bottom-6 right-6">
-                    <p class="text-white">asdasdasdasd</p>
-                    <span class="" style="color: white;">
-                        <i class="fas fa-info-circle sm:fa-1x fa-2x"></i>
-                    </span>
+            <div class="relative image-container">
+                <div class="darken">
+                    <img class="m-4 w-auto md:h-96 sm:h-60 h-36 shadow" src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" alt="Image 2">
                 </div>
-            </div>-->
+                <p class="image-text absolute top-6 left-8 text-white font-bold text-xl">Info: asdasd</p>
+            </div>
         </div>
     </div>
 </body>
